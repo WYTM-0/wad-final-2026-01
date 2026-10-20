@@ -1,0 +1,42 @@
+.app-shell { display:flex; flex-direction:column; min-height:100vh; background:#f7f8fc; }
+.topbar.MuiAppBar-root { background:#fff; color:#253057; border-bottom:1px solid #eaedf6; }
+.brand { display:flex; align-items:center; gap:11px; }
+.brand-icon, .login-brand-icon { display:flex; justify-content:center; align-items:center; width:43px; height:43px; border-radius:13px; color:#fff; background:linear-gradient(135deg,#6565e8,#9a76f5); box-shadow:0 7px 18px #6f6ee52e; }
+.nav-btn.MuiButton-root { font-size:13px; color:#4b5271; font-weight:700; text-transform:none; min-width:0; }
+.header-create.MuiButton-root { background:#655bd7; border-radius:9px; text-transform:none; }
+.logout-mobile.MuiButton-root { display:none; min-width:36px; }
+.footer { border-top:1px solid #e9eaf3; background:#fff; color:#8589a0; padding:20px 0; font-size:12px; }
+.hero-panel.MuiPaper-root { display:flex; position:relative; overflow:hidden; border-radius:25px; background:linear-gradient(115deg,#342f86 0%,#5a55c0 58%,#8f78dc 100%); color:white; min-height:355px; }
+.hero-copy { padding:55px 48px; position:relative; z-index:1; width:66%; }
+.hero-chip.MuiChip-root { background:#ffffff26; color:white; letter-spacing:.11em; font-weight:800; font-size:11px; }
+.hero-title.MuiTypography-root { font-weight:850; letter-spacing:-.055em; line-height:1.15; font-size:clamp(29px,3vw,44px); margin:17px 0; }
+.hero-subtitle.MuiTypography-root { color:#e3dfff; line-height:1.6; max-width:490px; margin-bottom:28px; }
+.hero-cta.MuiButton-root { background:white; color:#4133a5; font-weight:800; border-radius:10px; text-transform:none; padding:11px 21px; }
+.hero-secondary.MuiButton-root { color:white; border-color:#ffffff8a; font-weight:700; border-radius:10px; text-transform:none; }
+.hero-visual { width:34%; display:flex; align-items:center; justify-content:center; overflow:hidden; opacity:.95; }
+.hero-visual img { width:170%; max-width:none; height:100%; object-fit:cover; mix-blend-mode:screen; opacity:.72; }
+.section-intro { margin:9px 0 0; }
+.feature-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.feature-card.MuiPaper-root { display:flex; flex-direction:column; align-items:flex-start; gap:14px; border:1px solid #e9ebf5; border-radius:18px; padding:26px; transition:transform .2s,box-shadow .2s; min-height:227px; }
+.feature-card:hover {transform:translateY(-3px); box-shadow:0 14px 32px #28265d13; }
+.feature-icon { width:51px; height:51px; border-radius:14px; display:flex; align-items:center; justify-content:center; }
+.feature-icon.purple { color:#645ad9; background:#eeecff; }
+.feature-icon.aqua { color:#11938a; background:#dcf7f0; }
+.feature-link { display:flex; align-items:center; gap:6px; color:#5a55b3; font-size:14px; font-weight:800; margin-top:auto; }
+.course-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.course-card.MuiPaper-root { border:1px solid #e8eaf4; border-radius:17px; padding:22px; min-height:324px; }
+.course-name { line-height:1.35; overflow-wrap:anywhere; }
+.topic-chip.MuiChip-root { background:#f0effc; color:#5d5ba4; font-size:12px; font-weight:600; }
+.empty-state { min-height:245px; display:flex; flex-direction:column; gap:8px; align-items:center; justify-content:center; text-align:center; background:#fff; border:1px dashed #d8dded; border-radius:17px; padding:25px; }
+.form-card.MuiPaper-root, .detail-pane.MuiPaper-root { border:1px solid #e8eaf4; border-radius:17px; padding:31px; }
+.form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.detail-hero.MuiPaper-root { background:linear-gradient(110deg,#fff,#f0eeff); border:1px solid #e2e0f8; border-radius:19px; padding:35px; }
+.detail-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:22px; }
+.stat-icon { display:flex; align-items:center; justify-content:center; width:43px; height:43px; border-radius:12px; background:#f0efff; color:#6560ca; }
+.student-row { padding:10px 6px; border-bottom:1px solid #f0f0f6; }
+.login-page { min-height:100vh; display:flex; align-items:center; background:radial-gradient(circle at 14% 16%,#e5e2ff,transparent 32%),radial-gradient(circle at 90% 80%,#dff0f3,transparent 30%),#f7f8fc; padding:35px 0; }
+.login-brand-icon { width:60px; height:60px; border-radius:18px; }
+.login-card.MuiPaper-root { border:1px solid #ececf5; padding:38px; border-radius:20px; box-shadow:0 22px 55px #2321570d; }
+.center-screen { display:flex; align-items:center; justify-content:center; min-height:100vh; }
+@media(max-width:960px) { .course-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .hero-copy { width:72%; } .hero-visual { width:28%; } }
+@media(max-width:640px) { .hero-panel.MuiPaper-root { min-height:unset; } .hero-copy { width:100%; padding:35px 25px; } .hero-visual { display:none; } .feature-grid,.course-grid,.detail-grid,.form-grid { grid-template-columns:1fr; } .form-card.MuiPaper-root,.detail-pane.MuiPaper-root { padding:21px; } .detail-hero.MuiPaper-root { padding:25px; } .detail-hero h3 { font-size:32px; } .login-card.MuiPaper-root { padding:26px; } .nav-btn.MuiButton-root { font-size:12px; padding:6px; } .logout-mobile.MuiButton-root { display:inline-flex; } .header-create.MuiButton-root { padding:5px 8px; } }
