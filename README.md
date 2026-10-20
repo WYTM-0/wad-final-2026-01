@@ -6,8 +6,8 @@ The application consists of a Next.js backend (`next-backend/`), a React + Vite 
 
 ## Student Information
 
-- **Student Name:** [Your name]
-- **Student ID:** [Your student ID]
+- **Student Name:** Wai Yan Thet Min
+- **Student ID:** 6715037
 
 ## Test Credentials
 
